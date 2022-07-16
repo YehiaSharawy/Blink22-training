@@ -192,7 +192,7 @@ h3 {
     flex-direction: column;
     display: flex;
     align-items: center;
-    margin: 3em 0;
+    margin: 3em 0 9em 0;
     height: 40em;
 }
 
@@ -210,7 +210,8 @@ h3 {
     max-height: 200em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
-    line-height: 1.5em;
+    line-height: 1.3em;
+    padding: 0 0 2em 0;
 }
 
 .infotypes {
@@ -229,6 +230,8 @@ h3 {
 
 .types img {
     background-color: white;
+    box-shadow: 0 0 5px rgb(235, 234, 234);
+    padding: 1em;
     margin: 1em 0 2em 0;
     border: 2px solid white;
 }
@@ -242,6 +245,7 @@ h3 {
     line-height: 1.3em;
     font-size: 1.2em;
     margin-bottom: 1em;
+    line-height: 1.3em;
 }
 
 .types a {
@@ -268,13 +272,94 @@ h3 {
 
 .testimonial {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0 10em;
     background-color: rgb(240, 240, 240);
-    padding: 5em 0;
+    padding: 3em 0 2.5em 0;
 }
 
 .testimonial h2 {
-    font-size: 2em;
+    font-size: 2.5em;
+}
 
+.testimonial .t-quotes {
+    box-shadow: 0 0 5px gray;
+    width: 60em;
+    height: 18em;
+    margin: 2em 0;
+}
+
+.testimonial .t-buttons {
+    display: flex;
+}
+
+.testimonial .button {
+    padding: 0.9em 0.5em 0.9em 0.5em;
+    margin: 0 0.5em;
+    max-width: 3em;
+}
+
+/* -------Projects Section-------- */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    padding: 5em 0;
+}
+
+.projects div {
+    /* box-shadow: 0 0 5px gray; */
+    width: 65em;
+    max-height: 23.6em;
+    margin: 2em 0;
+}
+
+.projects .project1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects .project1 h2 {
+    text-transform: capitalize;
+    font-size: 2.2em;
+    padding: 1em 0;
+}
+
+#p-style {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    line-height: 1.3em;
+}
+
+.projects .project1 p {
+    max-width: 27em;
+}
+
+.project1 .button {
+    justify-content: flex-start;
+    box-shadow: 0 0;
+    color: white;
+    background-color: black;
+    max-width: 20em;
+    padding: 1.5em;
+}
+
+.project1 .button img {
+    padding: 0 0 0 1.5em;
+}
+
+/* .p-img {
+    width: 5em;
+    height: 5em;
+} */
+
+.project1 .p-img {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 2em;
+    max-width: 45em;
+    max-height: 16em;
 }
