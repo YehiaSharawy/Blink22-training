@@ -1,0 +1,280 @@
+/* Reseting Css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------Nav Section-------- */
+
+::selection {
+    background-color: #ffc107;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 10em 0 10em;
+    margin: 0 auto;
+    width: 90%;
+    text-transform: uppercase;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navmain {
+    font-size: 0.85em;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 4.6em;
+}
+
+.navmain a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin: 0 1.2em;
+    transition: color 0.5s;
+}
+
+.navmain li:last-child {
+    width: 13em;
+
+}
+
+.navmain a:hover {
+    color: #ffc107;
+}
+
+.navmain a:active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    border: 3px solid black;
+    border-radius: 0.2em;
+    box-shadow: 3px 3px black;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation .button a {
+    max-width: 8em;
+    font-size: 1.1em;
+    padding: 0.3em 1.2em;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+.navigation .buttonimg {
+    padding-right: 2em;
+    transform: scale(1);
+}
+
+/* -------First Section-------- */
+.intro {
+    display: flex;
+    margin-top: 2em;
+    max-height: 500em;
+}
+
+.intro img {
+    margin-left: 18em;
+}
+
+
+.introtext h1 {
+    max-width: 15em;
+    display: block;
+    text-transform: uppercase;
+    max-height: 2em;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-top: 3.5em;
+}
+
+.highlight {
+    background-color: #ffc107;
+}
+
+.introtext p {
+    display: block;
+    font-size: 1.8em;
+    margin: 2em 0;
+    max-width: 18em;
+}
+
+.intro .button {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 15em;
+    padding: 1em 1em 0.7em 1em;
+    margin-right: 3em;
+}
+
+.intro .button:last-child {
+    margin-right: 0em;
+}
+
+.intro .button a {
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    max-width: 10em;
+}
+
+.intro .buttonimg {
+    margin-left: 1.3em;
+    transform: scale(0.8);
+}
+
+.intro .button:last-child {
+    max-width: 20em;
+    background-color: black;
+}
+
+.intro .button a[href='#workwithus'] {
+    color: white;
+}
+
+.guibutton {
+    display: flex;
+}
+
+.button:hover {
+    background-color: hsla(0, 3%, 92%, 0.59);
+}
+
+.intro .button:hover {
+    transform: translateY(-0.2em);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.intro .button:active {
+    transform: scale(0.95);
+}
+
+/* -------Second Section-------- */
+
+.info {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 3em 0;
+    height: 40em;
+}
+
+.info h1 {
+    font-size: 2em;
+    font-weight: 900;
+    max-width: 15em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.info>p {
+    text-align: center;
+    max-width: 40em;
+    max-height: 200em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.infotypes {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+    justify-content: baseline;
+}
+
+.infotypes .types {
+    max-width: 20em;
+    text-align: center;
+    margin: 0 1.5em 0 1.5em;
+
+}
+
+.types img {
+    background-color: white;
+    margin: 1em 0 2em 0;
+    border: 2px solid white;
+}
+
+.types h2 {
+    padding: 0 0 1em 0;
+}
+
+.types p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.types a {
+    font-weight: 900;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 1.5em;
+    border-bottom: 4px solid #ffc107;
+    transition: color 0.5s;
+}
+
+.types a:hover {
+    color: #ffc107;
+}
+
+.types .fix-a {
+    margin-bottom: 2.4em;
+
+}
+
+/* -------Testimonial Section-------- */
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    margin: 0 10em;
+    background-color: rgb(240, 240, 240);
+    padding: 5em 0;
+}
+
+.testimonial h2 {
+    font-size: 2em;
+
+}
